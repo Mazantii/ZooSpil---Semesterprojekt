@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 0;
-    public float jumpSpeed = 0;
-    public bool isGrounded;
+    public float speed = 0; // speed forøger
+    public float jumpSpeed = 0; // Hop forøger
+    public bool isGrounded; // Tjekker om spilleren står på Ground
+    public float rotationSpeed; // er hastigheden spilleren drejer til den retning der kigges
 
     private Rigidbody rb;
 
@@ -61,6 +62,21 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
         rb.AddForce(movement * speed);
+
+        //Hvis spilleren rykker sig, skal spilleren kigge i den rykkede retning.
+        if(movement != Vector3.zero)
+        {
+            /*Denne type er brugt til at gemme rotationer*/
+            Quaternion toRotation = Quaternion.LookRotation(movement, Vector3.up);
+
+            //Her faer vi spilleren til at rotere til den retning der kigges, saa det ikke sker i et hurtigt unaturligt hug.
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
+    }
+
+    void Update()
+    {
+
     }
 
 }
