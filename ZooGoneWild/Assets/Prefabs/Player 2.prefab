@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1954162927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1954162928}
+  m_Layer: 0
+  m_Name: Pewpew
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1954162928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954162927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.65, y: 0, z: 0.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7880691601627551847}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7758573165897316909
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +544,7 @@ GameObject:
   - component: {fileID: 7880691601627551843}
   - component: {fileID: 7880691601627551846}
   - component: {fileID: 7880691601627551845}
+  - component: {fileID: 6341556941762921256}
   - component: {fileID: 7758573166482114892}
   m_Layer: 0
   m_Name: Player 2
@@ -535,6 +566,7 @@ Transform:
   m_Children:
   - {fileID: 7758573166376147648}
   - {fileID: 7758573166045101220}
+  - {fileID: 1954162928}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -645,7 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 50bcb26659b89144d85a581ab3410d1b, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: a642052515efcd940a7106ace1ca38b3, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -660,9 +692,27 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: New action map
+  m_DefaultActionMap: Player 2
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6341556941762921256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7880691601627551852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45bcc78e13a47ce4dbfe3cb430f53c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 4029589459645556713, guid: e4d03655cc2c5c74d9e8231754141c71, type: 3}
+  FireTransform: {fileID: 1954162928}
+  ShootingAudio: {fileID: 0}
+  FireClip: {fileID: 0}
+  BulletSpeed: 100
+  BulletCooldown: 0
 --- !u!114 &7758573166482114892
 MonoBehaviour:
   m_ObjectHideFlags: 0
