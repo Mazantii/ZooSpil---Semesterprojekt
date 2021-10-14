@@ -14,6 +14,8 @@ public class TouchPickUp : MonoBehaviour
         if(other.tag == "Animal")
         {
             Animal.transform.parent = Player.transform;
+            Animal.transform.localPosition = new Vector3 (-1, 0, 1);
+            Animal.transform.localRotation = Quaternion.identity;
             HasPickedUp = true;
         }
     }

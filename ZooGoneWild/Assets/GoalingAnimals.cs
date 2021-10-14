@@ -25,7 +25,7 @@ public class GoalingAnimals : MonoBehaviour
     { 
         if (other.gameObject == ThisPlayer) //tjekker hvis det object der collider er goalzonens player
         {
-            if (touchpickup.HasPickedUp == true)
+            if (touchpickup.HasPickedUp == true) 
             {
             CanGoal = true; //man aflevere
             }
