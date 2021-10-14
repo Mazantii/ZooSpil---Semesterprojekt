@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 0; // Hop forøger
     public bool isGrounded; // Tjekker om spilleren står på Ground
     public float rotationSpeed; // er hastigheden spilleren drejer til den retning der kigges
+    public float speedBoost; //Hvor mange sekunders speedboost spilleren har
+    public float speedBoostMultiplier; //Hvor meget hurtigere spilleren skal blive af speedboost
 
     private Rigidbody rb;
 
@@ -37,6 +39,21 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
 
         }
+        else if (other.CompareTag("SpeedBoost")) // her ser vi om vi rammer en speedboost
+        {
+            StartCoroutine(SpeedBoost()); // Hvis vi gør, så starter vi SpeedBoost Coroutinen-
+            other.gameObject.SetActive(false); //- og sletter speedboosten.
+        }
+    }
+
+    IEnumerator SpeedBoost()
+    {
+        speed *= speedBoostMultiplier; // Her sætter vi spillerens hastighed til at svare til den speedboost vi vil give.
+
+       yield return new WaitForSeconds(speedBoost); // Her venter vi den antal tid vi har sat speedboost til at vare.
+
+        speed /= speedBoostMultiplier; // Her går vi tilbage til normal hastighed efter speedboost er løbet ud.
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -59,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
         rb.AddForce(movement * speed);
@@ -71,12 +89,8 @@ public class PlayerMovement : MonoBehaviour
 
             //Her faer vi spilleren til at rotere til den retning der kigges, saa det ikke sker i et hurtigt unaturligt hug.
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+
         }
-    }
-
-    void Update()
-    {
-
     }
 
 }
