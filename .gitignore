@@ -36,3 +36,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 ZooGoneWild/Logs/AssetImportWorker0-prev.log
+*.log
