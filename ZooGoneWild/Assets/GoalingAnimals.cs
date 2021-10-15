@@ -18,6 +18,7 @@ public class GoalingAnimals : MonoBehaviour
            Animal.transform.parent = null;                          //sætter animals parent til goal
            Animal.GetComponent<BoxCollider>().enabled = false;      //disabler animals collider
            Animal.GetComponent<CapsuleCollider>().enabled = false;  //disabler animals trigger collider
+            touchpickup.HasPickedUp = false;
         }
     }
 
@@ -30,7 +31,6 @@ public class GoalingAnimals : MonoBehaviour
             CanGoal = true; //man aflevere
             }
         }
-     
     }
 
     void OnTriggerExit(Collider other)
@@ -40,6 +40,4 @@ public class GoalingAnimals : MonoBehaviour
             CanGoal = false; //man kan ikke aflevere
         }
     }
-    
-
 }

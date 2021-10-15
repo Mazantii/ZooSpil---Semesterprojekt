@@ -13,19 +13,12 @@ public class PlayerShooting : MonoBehaviour
     public float BulletCooldown;
 
     private bool Fired;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
     private void FixedUpdate()
     {
-
         if (BulletCooldown > 0)
         {
             BulletCooldown -= 1 * Time.deltaTime;
         }
-
     }
     void OnFire(InputValue FireValue)
     {
@@ -42,5 +35,4 @@ public class PlayerShooting : MonoBehaviour
 
         BulletInstance.velocity = BulletSpeed * FireTransform.forward;
     }
-
 }

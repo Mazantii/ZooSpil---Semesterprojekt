@@ -34,12 +34,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ground"))
+        if (other.tag == "Ground")
         {
             isGrounded = true;
 
         }
-        else if (other.CompareTag("SpeedBoost")) // her ser vi om vi rammer en speedboost
+        else if (other.tag == "SpeedBoost") // her ser vi om vi rammer en speedboost
         {
             StartCoroutine(SpeedBoost()); // Hvis vi gør, så starter vi SpeedBoost Coroutinen-
             other.gameObject.SetActive(false); //- og sletter speedboosten.

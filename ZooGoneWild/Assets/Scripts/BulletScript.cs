@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    public ParticleSystem BulletParticles;
-    public AudioSource BulletAudio;
+    // public ParticleSystem BulletParticles;
+    // public AudioSource BulletAudio;
     public float Damage = 33f;
     public float MaxLifeTime = 2f;
 
@@ -28,13 +28,14 @@ public class BulletScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        BulletParticles.transform.parent = null;
+        /*BulletParticles.transform.parent = null;
         BulletParticles.Play();
 
         BulletAudio.Play();
 
         Destroy(BulletParticles.gameObject, BulletParticles.main.duration);
         Destroy(gameObject);
+        */
 
     }
 

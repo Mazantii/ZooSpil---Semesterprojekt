@@ -192,4 +192,4 @@ MonoBehaviour:
   BulletParticles: {fileID: 0}
   BulletAudio: {fileID: 0}
   Damage: 30
-  MaxLifeTime: 100
+  MaxLifeTime: 20

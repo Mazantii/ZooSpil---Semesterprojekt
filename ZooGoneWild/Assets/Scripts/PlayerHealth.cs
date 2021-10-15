@@ -34,7 +34,6 @@ public class PlayerHealth : MonoBehaviour
         {
             OnDeath(); //her kalder vi denne funktion, som "Dreaber" spilleren.
         }
-
     }
 
     private void SetHealthUI()
@@ -51,17 +50,5 @@ public class PlayerHealth : MonoBehaviour
         Dead = true; //vi saetter den til true med det samme, saa den ikke bliver brugt mere end en gang.
 
         gameObject.SetActive(false); // her slaar vi spillern fra.
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
