@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 8828269877549717353, guid: 4e59c718994fdab43a680bac10db50f1, type: 3}
       propertyPath: ThisPlayer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 279598114}
     - target: {fileID: 8828269877549717353, guid: 4e59c718994fdab43a680bac10db50f1, type: 3}
       propertyPath: touchpickup
       value: 
@@ -289,6 +289,17 @@ MonoBehaviour:
   Animal: {fileID: 1706093017}
   Player: {fileID: 0}
   HasPickedUp: 0
+--- !u!114 &279598116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7758573166482114892, guid: 9eb892cc1ef69254badf9e4661f51888, type: 3}
+  m_PrefabInstance: {fileID: 279598112}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279598114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f23f6c763701ef4fb7bfb24d0b99a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &329463344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -482,7 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3174b4a24c692a4dafb98e4dc85db39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Death: {fileID: 0}
+  Death: {fileID: 279598116}
   Player: {fileID: 501635078005261275, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
 --- !u!4 &1434841685
 Transform:
