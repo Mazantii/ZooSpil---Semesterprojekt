@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Ground"))
+        if (other.tag == "Ground")
         {
             isGrounded = false;
 

@@ -18,7 +18,7 @@ public class GoalingAnimals : MonoBehaviour
            Animal.transform.parent = null;                          //sætter animals parent til goal
            Animal.GetComponent<BoxCollider>().enabled = false;      //disabler animals collider
            Animal.GetComponent<CapsuleCollider>().enabled = false;  //disabler animals trigger collider
-            touchpickup.HasPickedUp = false;
+           touchpickup.HasPickedUp = false;
         }
     }
 

@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
     public Color NoHealthColor = Color.red; // her er det omvendt, imod 0 liv og roed farve.
 
     private float CurrentHealth; //spillerens liv.
-    private bool Dead; // siger sig selv, veardi til at se om spilleren har 0 health.
+    public bool Dead; // siger sig selv, veardi til at se om spilleren har 0 health.
 
     private void OnEnable()
     {
@@ -49,6 +49,6 @@ public class PlayerHealth : MonoBehaviour
         // her doer spilleren
         Dead = true; //vi saetter den til true med det samme, saa den ikke bliver brugt mere end en gang.
 
-        gameObject.SetActive(false); // her slaar vi spillern fra.
+        //gameObject.SetActive(false); // her slaar vi spillern fra.
     }
 }

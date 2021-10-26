@@ -18,12 +18,12 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.tag == "Player")
         {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(Damage);
             Destroy(gameObject);
         }
-        else if (other.CompareTag("Ground"))
+        else if (other.tag == "Ground")
         {
             Destroy(gameObject);
         }

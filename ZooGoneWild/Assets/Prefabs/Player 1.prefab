@@ -546,6 +546,7 @@ GameObject:
   - component: {fileID: 501635078005261266}
   - component: {fileID: 738218747}
   - component: {fileID: 262286526}
+  - component: {fileID: -4265909107400284362}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -665,6 +666,8 @@ MonoBehaviour:
   jumpSpeed: 3
   isGrounded: 0
   rotationSpeed: 720
+  speedBoost: 0
+  speedBoostMultiplier: 0
 --- !u!114 &501635078005261266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,6 +715,7 @@ MonoBehaviour:
   FillImage: {fileID: 287629724}
   FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   NoHealthColor: {r: 1, g: 0, b: 0, a: 1}
+  Dead: 0
 --- !u!114 &262286526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,3 +734,18 @@ MonoBehaviour:
   FireClip: {fileID: 0}
   BulletSpeed: 100
   BulletCooldown: 0
+--- !u!114 &-4265909107400284362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501635078005261275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b620fe15e67f0904da48a822f7b21b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animal: {fileID: 0}
+  Player: {fileID: 0}
+  HasPickedUp: 0

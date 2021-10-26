@@ -5,7 +5,7 @@ using UnityEngine;
 public class TouchPickUp : MonoBehaviour
 {
     public GameObject Animal;
-    public Transform Player;
+    public GameObject Player;
     
     public bool HasPickedUp;
 
