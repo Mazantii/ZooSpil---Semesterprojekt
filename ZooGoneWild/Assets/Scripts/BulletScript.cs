@@ -9,7 +9,6 @@ public class BulletScript : MonoBehaviour
     public float Damage = 33f;
     public float MaxLifeTime = 2f;
 
-
     // Start is called before the first frame update
     private void Start()
     {

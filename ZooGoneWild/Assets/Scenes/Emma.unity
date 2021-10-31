@@ -294,6 +294,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7758573166045101219, guid: 9eb892cc1ef69254badf9e4661f51888, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880691601627551843, guid: 9eb892cc1ef69254badf9e4661f51888, type: 3}
+      propertyPath: m_Drag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880691601627551843, guid: 9eb892cc1ef69254badf9e4661f51888, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7880691601627551846, guid: 9eb892cc1ef69254badf9e4661f51888, type: 3}
       propertyPath: speed
       value: 80
@@ -527,6 +539,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 167110420, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 287629723, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -606,6 +622,26 @@ PrefabInstance:
     - target: {fileID: 501635078005261265, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
       propertyPath: speedBoostMultiplier
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 501635078005261268, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
+      propertyPath: m_Drag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 501635078005261268, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 501635078005261268, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 501635078005261269, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 501635078005261269, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 501635078005261270, guid: d6544400a316c3842a4fa4171e30a364, type: 3}
       propertyPath: m_Enabled
