@@ -6,7 +6,7 @@ using UnityEngine.UI; // hentet saa vi kan benytte UI
 public class PlayerHealth : MonoBehaviour
 {
 
-    public float Health = 100f; //Antal liv spilleren har i starten.
+    public float Health = 4f; //Antal liv spilleren har i starten.
     public Slider Slider; // vores slider altsaa livsbar er hvad vi referere til her. Det er den som styre hvor meget af vores fillimage der er fyldt ud.
     public Image FillImage; // vi vil skifte farve paa livsbaren alt efter hvor meget liv vi har, derfor skal vi kunne have adgang til det billede.
     public Color FullHealthColor = Color.green; // Her har vi lavet en variabel til naer spilleren har fuldt liv, og givet den en groen farve.
@@ -49,6 +49,6 @@ public class PlayerHealth : MonoBehaviour
         // her doer spilleren
         Dead = true; //vi saetter den til true med det samme, saa den ikke bliver brugt mere end en gang.
 
-        //gameObject.SetActive(false); // her slaar vi spillern fra.
+        gameObject.SetActive(false); // her slaar vi spillern fra.
     }
 }
