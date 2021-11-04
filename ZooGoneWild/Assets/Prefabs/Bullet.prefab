@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4029589459645556713}
   - component: {fileID: 4029589459645556715}
   - component: {fileID: 4029589459645556714}
+  - component: {fileID: -4355383622953994689}
+  - component: {fileID: 2015001698}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -94,7 +96,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2196510402709896257}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -189,7 +191,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45627bcf20736174188910a21f42e554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletParticles: {fileID: 0}
-  BulletAudio: {fileID: 0}
-  Damage: 30
+  Damage: 0
   MaxLifeTime: 20
+--- !u!114 &-4355383622953994689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196510402709896257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c6e72777ca5d7469508c7e0bd6885e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KnockbackStrenght: -100
+--- !u!65 &2015001698
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196510402709896257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0}
