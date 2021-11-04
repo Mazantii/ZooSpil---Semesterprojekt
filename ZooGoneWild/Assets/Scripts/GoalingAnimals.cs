@@ -22,7 +22,7 @@ public class GoalingAnimals : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     { 
         if (other.gameObject == ThisPlayer) //tjekker hvis det object der collider er goalzonens player
         {
@@ -33,7 +33,7 @@ public class GoalingAnimals : MonoBehaviour
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject == ThisPlayer) //tjekker hvis det object på den collider er den player hvis goalzone det er
         {

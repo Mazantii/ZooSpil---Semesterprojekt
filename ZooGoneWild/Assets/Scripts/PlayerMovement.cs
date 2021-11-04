@@ -29,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
         movementX = movementVector.x;
         movementY = movementVector.y;
-
     }
 
     private void OnTriggerEnter(Collider other)
